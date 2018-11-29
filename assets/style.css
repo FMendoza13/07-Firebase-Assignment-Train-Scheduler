@@ -1,0 +1,28 @@
+body {
+    background-image: url("../assets/images/trainstation.jpeg");
+    background-size: cover;
+  }
+  
+  #heading {
+    font-family: Times;
+    font-weight: bold;
+  }
+  
+  #subHeading {
+    font-family: Times;
+    font-style: italic;
+  }
+  
+  .panel-title {
+    font-weight: bold;
+    color: aliceblue
+  }
+  
+  th {
+    font-weight: bold;
+    color: aliceblue
+  }
+  
+  .form-group {
+    color: aliceblue;
+  }
