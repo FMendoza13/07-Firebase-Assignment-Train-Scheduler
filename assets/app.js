@@ -1,5 +1,6 @@
 $(document).ready(function() {
 // Firebase link
+
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyCm2k5RZ891YjEP8z1nTWYGFs2Ui8Zdadw",
@@ -39,7 +40,7 @@ $("#addTrainBtn").on("click", function(){
         frequency: frequencyInput,
     }
     // push data to firebase
-    trainData.push(newTrain);
+    database.ref(newTrain);
 
     $("#trainNameInput").val("");
     $("#lineInput").val("");
@@ -49,7 +50,7 @@ $("#addTrainBtn").on("click", function(){
 
     return false;
 });
-    trainData.on("child_added", function(childSnapshot, prevChildKey){
+    database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
         console.log(childSnapshot.val());
 
